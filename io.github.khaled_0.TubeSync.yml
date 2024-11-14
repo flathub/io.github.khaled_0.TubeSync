@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/flatpak/flatpak-builder/main/data/flatpak-manifest.schema.json
 id: io.github.khaled_0.TubeSync
 runtime: org.freedesktop.Platform
-runtime-version: "24.08"
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: tubesync
 finish-args:
@@ -16,14 +16,14 @@ cleanup:
   - /include
   - /lib/pkgconfig
   - /share/man
-  - "*.la"
+  - '*.la'
 
 modules:
   - name: libmpv
     buildsystem: simple
     build-commands:
-      - python3 waf configure --prefix=/app --enable-libmpv-shared --disable-cplayer --disable-build-date
-        --disable-alsa
+      - python3 waf configure --prefix=/app --enable-libmpv-shared --disable-cplayer
+        --disable-build-date --disable-alsa
       - python3 waf build
       - python3 waf install
     sources:
@@ -52,7 +52,7 @@ modules:
             commit: a8b68ebfaa68621b5ac8907610d3335971839d52
       - name: nv-codec-headers
         cleanup:
-          - "*"
+          - '*'
         no-autogen: true
         make-install-args:
           - PREFIX=/app
@@ -101,7 +101,7 @@ modules:
 
       - type: file
         url: https://raw.githubusercontent.com/khaled-0/TubeSync/refs/heads/main/linux/io.github.khaled_0.TubeSync.metainfo.xml
-        sha256: 58b55413ca7aabf2a0b1b376855863d0fba9a95ef93daa2eef2517d3eb54c482
+        sha256: 8e5a264cf9015dbdeddfbd7545c1ccbdd5d3d63ad236f46f90f08db81a58c6d7
         dest-filename: io.github.khaled_0.TubeSync.metainfo.xml
         x-checker-data:
           type: rotating-url
