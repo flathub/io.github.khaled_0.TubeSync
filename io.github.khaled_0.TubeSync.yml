@@ -109,7 +109,7 @@ modules:
 
       - type: file
         url: https://raw.githubusercontent.com/khaled-0/TubeSync/refs/heads/main/assets/tubesync.svg
-        sha256: 4c2bf50384b05d25124db49a9dba844c5977d7b227bfbf8383254f1f957abe6e
+        sha256: 8a8fe108ad4f0c452de5ff5708e08acbd84d0257009b87c6dfffb8dd3696c2cb
         dest-filename: tubesync.svg
         x-checker-data:
           type: rotating-url
