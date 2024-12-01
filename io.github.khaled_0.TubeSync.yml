@@ -101,7 +101,7 @@ modules:
 
       - type: file
         url: https://raw.githubusercontent.com/khaled-0/TubeSync/refs/heads/main/linux/io.github.khaled_0.TubeSync.metainfo.xml
-        sha256: d8fe8967d210a8bdb421f22abdf65f05afe5fbe25268408489a1ef81fb456426
+        sha256: bcb19b0cf08bd70ec850d3225c89216637f1351f9effa5b25e8e0ee92f8dcbf0
         dest-filename: io.github.khaled_0.TubeSync.metainfo.xml
         x-checker-data:
           type: rotating-url
