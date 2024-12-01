@@ -116,8 +116,8 @@ modules:
           url: https://raw.githubusercontent.com/khaled-0/TubeSync/refs/heads/main/assets/tubesync.svg
 
       - type: file
-        url: https://github.com/khaled-0/TubeSync/releases/download/0.1.4/tubesync_linux.zip
-        sha256: 83c1e9dd5f25165289e3234fa90490d96d57653831b8fa3b7e278995881f1598
+        url: https://github.com/khaled-0/TubeSync/releases/download/0.1.5/tubesync_linux.zip
+        sha256: 7e442c8d71997e00b3add31fe907e1dcbf0e4f6c1c3b58b8001370bb2ff87e08
         dest-filename: tubesync.zip
         x-checker-data:
           type: json
