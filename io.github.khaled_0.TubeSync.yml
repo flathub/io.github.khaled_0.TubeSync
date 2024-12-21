@@ -101,7 +101,7 @@ modules:
 
       - type: file
         url: https://raw.githubusercontent.com/khaled-0/TubeSync/refs/heads/main/linux/io.github.khaled_0.TubeSync.metainfo.xml
-        sha256: 4da93c6b1d081246e6c27b0b1e810518f246f45a4fb38583d56b67883e1e7749
+        sha256: f67339567077f34b6d631aa9d9c791cd7f8d582580fd402f53690fbae5e26963
         dest-filename: io.github.khaled_0.TubeSync.metainfo.xml
         x-checker-data:
           type: rotating-url
@@ -116,8 +116,8 @@ modules:
           url: https://raw.githubusercontent.com/khaled-0/TubeSync/refs/heads/main/assets/icons/tubesync.svg
 
       - type: file
-        url: https://github.com/khaled-0/TubeSync/releases/download/0.1.5/tubesync_linux.zip
-        sha256: 7e442c8d71997e00b3add31fe907e1dcbf0e4f6c1c3b58b8001370bb2ff87e08
+        url: https://github.com/khaled-0/TubeSync/releases/download/0.1.6/tubesync_linux.zip
+        sha256: 6b4c58aabd60722f463ba616947f6f20831a5f02870760c174da4f7e7edb179d
         dest-filename: tubesync.zip
         x-checker-data:
           type: json
