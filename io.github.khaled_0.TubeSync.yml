@@ -3,7 +3,7 @@ id: io.github.khaled_0.TubeSync
 runtime: org.freedesktop.Platform
 runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
-command: tubesync
+command: myusync
 finish-args:
   - --socket=wayland
   - --socket=fallback-x11
