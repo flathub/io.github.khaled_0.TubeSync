@@ -3,7 +3,7 @@ id: io.github.khaled_0.TubeSync
 runtime: org.freedesktop.Platform
 runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
-command: tubesync
+command: myusync
 finish-args:
   - --socket=wayland
   - --socket=fallback-x11
@@ -79,49 +79,49 @@ modules:
             url: https://git.ffmpeg.org/ffmpeg.git
             commit: 769c36b01378d1d860150cea535dea1128abde0b
 
-  - name: tubesync
+  - name: myusync
     buildsystem: simple
     build-commands:
-      - mkdir tubesync
-      - unzip tubesync.zip -d tubesync
-      - cp -r tubesync /app/
+      - mkdir myusync
+      - unzip myusync.zip -d myusync
+      - cp -r myusync /app/
       - mkdir -p /app/bin
-      - ln -s /app/tubesync/tubesync /app/bin/tubesync
-      - install -Dm0644 tubesync.svg /app/share/icons/hicolor/scalable/apps/io.github.khaled_0.TubeSync.svg
+      - ln -s /app/myusync/myusync /app/bin/myusync
+      - install -Dm0644 myusync.svg /app/share/icons/hicolor/scalable/apps/io.github.khaled_0.TubeSync.svg
       - install -Dm0644 io.github.khaled_0.TubeSync.desktop /app/share/applications/io.github.khaled_0.TubeSync.desktop
       - install -Dm0644 io.github.khaled_0.TubeSync.metainfo.xml /app/share/metainfo/io.github.khaled_0.TubeSync.metainfo.xml
     sources:
       - type: file
-        url: https://raw.githubusercontent.com/khaled-0/TubeSync/refs/heads/main/linux/io.github.khaled_0.TubeSync.desktop
+        url: https://raw.githubusercontent.com/khaled-0/MyuSync/refs/heads/main/linux/io.github.khaled_0.TubeSync.desktop
         sha256: c4ab1aacf62495445a96b0fdf4d5cb776c4844f21972fed9ae6f4b939b693136
         dest-filename: io.github.khaled_0.TubeSync.desktop
         x-checker-data:
           type: rotating-url
-          url: https://raw.githubusercontent.com/khaled-0/TubeSync/refs/heads/main/linux/io.github.khaled_0.TubeSync.desktop
+          url: https://raw.githubusercontent.com/khaled-0/MyuSync/refs/heads/main/linux/io.github.khaled_0.TubeSync.desktop
 
       - type: file
-        url: https://raw.githubusercontent.com/khaled-0/TubeSync/refs/heads/main/linux/io.github.khaled_0.TubeSync.metainfo.xml
+        url: https://raw.githubusercontent.com/khaled-0/MyuSync/refs/heads/main/linux/io.github.khaled_0.TubeSync.metainfo.xml
         sha256: f67339567077f34b6d631aa9d9c791cd7f8d582580fd402f53690fbae5e26963
         dest-filename: io.github.khaled_0.TubeSync.metainfo.xml
         x-checker-data:
           type: rotating-url
-          url: https://raw.githubusercontent.com/khaled-0/TubeSync/refs/heads/main/linux/io.github.khaled_0.TubeSync.metainfo.xml
+          url: https://raw.githubusercontent.com/khaled-0/MyuSync/refs/heads/main/linux/io.github.khaled_0.TubeSync.metainfo.xml
 
       - type: file
-        url: https://raw.githubusercontent.com/khaled-0/TubeSync/refs/heads/main/assets/icons/tubesync.svg
+        url: https://raw.githubusercontent.com/khaled-0/MyuSync/refs/heads/main/assets/icons/myusync.svg
         sha256: 60f921c9928791d1e94cf1e421e90ead7f3d7211b3cda7dc13f9409b8c427f57
-        dest-filename: tubesync.svg
+        dest-filename: myusync.svg
         x-checker-data:
           type: rotating-url
-          url: https://raw.githubusercontent.com/khaled-0/TubeSync/refs/heads/main/assets/icons/tubesync.svg
+          url: https://raw.githubusercontent.com/khaled-0/MyuSync/refs/heads/main/assets/icons/myusync.svg
 
       - type: file
-        url: https://github.com/khaled-0/TubeSync/releases/download/0.1.6/tubesync_linux.zip
+        url: https://github.com/khaled-0/MyuSync/releases/download/0.1.6/myusync_linux.zip
         sha256: 6b4c58aabd60722f463ba616947f6f20831a5f02870760c174da4f7e7edb179d
-        dest-filename: tubesync.zip
+        dest-filename: myusync.zip
         x-checker-data:
           type: json
-          url: https://api.github.com/repos/khaled-0/TubeSync/releases/latest
+          url: https://api.github.com/repos/khaled-0/MyuSync/releases/latest
           tag-query: .tag_name
           version-query: $tag
-          url-query: .assets[] | select(.name == "tubesync_linux.zip") | .browser_download_url
+          url-query: .assets[] | select(.name == "myusync_linux.zip") | .browser_download_url
