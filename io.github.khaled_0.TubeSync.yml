@@ -93,7 +93,7 @@ modules:
     sources:
       - type: file
         url: https://raw.githubusercontent.com/khaled-0/MyuSync/refs/heads/main/linux/io.github.khaled_0.TubeSync.desktop
-        sha256: 60f70291547ac69f20d52d274f13248e629bffb548a0409fdf3071e8f035dbdb
+        sha256: 50a6ec15bd2bbd99b51e540737333646c5396aab04e5d2b4e3efd5a9470f1d62
         dest-filename: io.github.khaled_0.TubeSync.desktop
         x-checker-data:
           type: rotating-url
@@ -101,7 +101,7 @@ modules:
 
       - type: file
         url: https://raw.githubusercontent.com/khaled-0/MyuSync/refs/heads/main/linux/io.github.khaled_0.TubeSync.metainfo.xml
-        sha256: db0113444f40b89c92ce34777f1c3aca18e653d411ad47e7e5a91a1b6db170e0
+        sha256: 3d801acbe3fac2721bdcd18f98ba9330521cfc6baf293037cd8f6e9c60ea48db
         dest-filename: io.github.khaled_0.TubeSync.metainfo.xml
         x-checker-data:
           type: rotating-url
