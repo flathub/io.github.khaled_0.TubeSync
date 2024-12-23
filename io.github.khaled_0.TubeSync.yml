@@ -3,7 +3,7 @@ id: io.github.khaled_0.TubeSync
 runtime: org.freedesktop.Platform
 runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
-command: myusync
+command: syncara
 finish-args:
   - --socket=wayland
   - --socket=fallback-x11
@@ -79,49 +79,49 @@ modules:
             url: https://git.ffmpeg.org/ffmpeg.git
             commit: 769c36b01378d1d860150cea535dea1128abde0b
 
-  - name: myusync
+  - name: syncara
     buildsystem: simple
     build-commands:
-      - mkdir myusync
-      - unzip myusync.zip -d myusync
-      - cp -r myusync /app/
+      - mkdir syncara
+      - unzip syncara.zip -d syncara
+      - cp -r syncara /app/
       - mkdir -p /app/bin
-      - ln -s /app/myusync/myusync /app/bin/myusync
-      - install -Dm0644 myusync.svg /app/share/icons/hicolor/scalable/apps/io.github.khaled_0.TubeSync.svg
+      - ln -s /app/syncara/syncara /app/bin/syncara
+      - install -Dm0644 syncara.svg /app/share/icons/hicolor/scalable/apps/io.github.khaled_0.TubeSync.svg
       - install -Dm0644 io.github.khaled_0.TubeSync.desktop /app/share/applications/io.github.khaled_0.TubeSync.desktop
       - install -Dm0644 io.github.khaled_0.TubeSync.metainfo.xml /app/share/metainfo/io.github.khaled_0.TubeSync.metainfo.xml
     sources:
       - type: file
-        url: https://raw.githubusercontent.com/khaled-0/MyuSync/refs/heads/main/linux/io.github.khaled_0.TubeSync.desktop
+        url: https://raw.githubusercontent.com/khaled-0/Syncara/refs/heads/main/linux/io.github.khaled_0.TubeSync.desktop
         sha256: 60f70291547ac69f20d52d274f13248e629bffb548a0409fdf3071e8f035dbdb
         dest-filename: io.github.khaled_0.TubeSync.desktop
         x-checker-data:
           type: rotating-url
-          url: https://raw.githubusercontent.com/khaled-0/MyuSync/refs/heads/main/linux/io.github.khaled_0.TubeSync.desktop
+          url: https://raw.githubusercontent.com/khaled-0/Syncara/refs/heads/main/linux/io.github.khaled_0.TubeSync.desktop
 
       - type: file
-        url: https://raw.githubusercontent.com/khaled-0/MyuSync/refs/heads/main/linux/io.github.khaled_0.TubeSync.metainfo.xml
+        url: https://raw.githubusercontent.com/khaled-0/Syncara/refs/heads/main/linux/io.github.khaled_0.TubeSync.metainfo.xml
         sha256: db0113444f40b89c92ce34777f1c3aca18e653d411ad47e7e5a91a1b6db170e0
         dest-filename: io.github.khaled_0.TubeSync.metainfo.xml
         x-checker-data:
           type: rotating-url
-          url: https://raw.githubusercontent.com/khaled-0/MyuSync/refs/heads/main/linux/io.github.khaled_0.TubeSync.metainfo.xml
+          url: https://raw.githubusercontent.com/khaled-0/Syncara/refs/heads/main/linux/io.github.khaled_0.TubeSync.metainfo.xml
 
       - type: file
-        url: https://raw.githubusercontent.com/khaled-0/MyuSync/refs/heads/main/assets/icons/myusync.svg
+        url: https://raw.githubusercontent.com/khaled-0/Syncara/refs/heads/main/assets/icons/syncara.svg
         sha256: 60f921c9928791d1e94cf1e421e90ead7f3d7211b3cda7dc13f9409b8c427f57
-        dest-filename: myusync.svg
+        dest-filename: syncara.svg
         x-checker-data:
           type: rotating-url
-          url: https://raw.githubusercontent.com/khaled-0/MyuSync/refs/heads/main/assets/icons/myusync.svg
+          url: https://raw.githubusercontent.com/khaled-0/Syncara/refs/heads/main/assets/icons/syncara.svg
 
       - type: file
-        url: https://github.com/khaled-0/MyuSync/releases/download/0.1.6/myusync_linux.zip
+        url: https://github.com/khaled-0/Syncara/releases/download/0.1.6/syncara_linux.zip
         sha256: 6b4c58aabd60722f463ba616947f6f20831a5f02870760c174da4f7e7edb179d
-        dest-filename: myusync.zip
+        dest-filename: syncara.zip
         x-checker-data:
           type: json
-          url: https://api.github.com/repos/khaled-0/MyuSync/releases/latest
+          url: https://api.github.com/repos/khaled-0/Syncara/releases/latest
           tag-query: .tag_name
           version-query: $tag
-          url-query: .assets[] | select(.name == "myusync_linux.zip") | .browser_download_url
+          url-query: .assets[] | select(.name == "syncara_linux.zip") | .browser_download_url
