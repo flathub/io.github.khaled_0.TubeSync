@@ -116,7 +116,7 @@ modules:
           url: https://raw.githubusercontent.com/khaled-0/MyuSync/refs/heads/main/assets/icons/myusync.svg
 
       - type: file
-        url: https://github.com/khaled-0/MyuSync/releases/download/0.1.6/myusync_linux.zip
+        url: https://github.com/khaled-0/Syncara/releases/download/0.1.6/myusync_linux.zip
         sha256: 6b4c58aabd60722f463ba616947f6f20831a5f02870760c174da4f7e7edb179d
         dest-filename: myusync.zip
         x-checker-data:
