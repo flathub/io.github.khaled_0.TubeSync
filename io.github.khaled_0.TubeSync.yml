@@ -117,7 +117,7 @@ modules:
 
       - type: file
         url: https://github.com/khaled-0/Syncara/releases/download/0.1.6/syncara_linux.zip
-        sha256: 0bfc12c0cba255d11ea23e39f15d87dbd4346f8b2ab960dfda2e2b9fa66eaba0
+        sha256: d43b5cec3434a5377f6ea8968ab332502efa28bc6bb4d0d91ad629045b7831ed
         dest-filename: syncara.zip
         x-checker-data:
           type: json
