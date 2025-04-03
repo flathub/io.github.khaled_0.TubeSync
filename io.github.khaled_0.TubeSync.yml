@@ -116,8 +116,8 @@ modules:
           url: https://raw.githubusercontent.com/khaled-0/Syncara/refs/heads/main/assets/icons/syncara.svg
 
       - type: file
-        url: https://github.com/khaled-0/Syncara/releases/download/0.1.7/syncara_linux.zip
-        sha256: d43b5cec3434a5377f6ea8968ab332502efa28bc6bb4d0d91ad629045b7831ed
+        url: https://github.com/khaled-0/Syncara/releases/download/0.1.8/syncara_linux.zip
+        sha256: 3b81bb70d89b4179dbbe16f28c0c9729ea42417478891df7d4672f22185a1fb8
         dest-filename: syncara.zip
         x-checker-data:
           type: json
