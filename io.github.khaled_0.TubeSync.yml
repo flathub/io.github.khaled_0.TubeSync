@@ -101,7 +101,7 @@ modules:
 
       - type: file
         url: https://raw.githubusercontent.com/khaled-0/Syncara/refs/heads/main/linux/io.github.khaled_0.TubeSync.metainfo.xml
-        sha256: 66ad866079643c110a86f760dae083564eea8a55b938f0fb9d1af4b99b8df812
+        sha256: fdbe411519d9754ffcbb4e94950940bbe2e53698c635a55d7a60a0a78e8385c5
         dest-filename: io.github.khaled_0.TubeSync.metainfo.xml
         x-checker-data:
           type: rotating-url
@@ -116,8 +116,8 @@ modules:
           url: https://raw.githubusercontent.com/khaled-0/Syncara/refs/heads/main/assets/icons/syncara.svg
 
       - type: file
-        url: https://github.com/khaled-0/Syncara/releases/download/0.1.8/syncara_linux.zip
-        sha256: 3b81bb70d89b4179dbbe16f28c0c9729ea42417478891df7d4672f22185a1fb8
+        url: https://github.com/khaled-0/Syncara/releases/download/0.1.9/syncara_linux.zip
+        sha256: 13d6a20e78e791438ddc4c38a4a331df2b1dc7fc2f7b2c0521e279c9f3ada245
         dest-filename: syncara.zip
         x-checker-data:
           type: json
